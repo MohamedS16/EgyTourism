@@ -1,0 +1,47 @@
+.allpage{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.content{
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upper{
+    height: auto;
+    padding: 50px 0px 10px 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sora img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.lower{
+    height: auto;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texts{
+    width: 70%;
+    
+}

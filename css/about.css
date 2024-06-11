@@ -1,0 +1,245 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.page-conent p{
+  color: rgb(70, 70, 70);
+
+}
+
+p,a{
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.main h1 {
+	font-size: 40px;
+	letter-spacing: 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.main h1,
+.vision-mission h1,
+.vision-mission .fa,
+.sectitle {
+	color: black;
+}
+
+.main .main-content {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.main .main-content .buttons {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.no-1,
+.no-2,
+.no-3 {
+	width: auto;
+	margin: 0 15px;
+	padding: 15px;
+	cursor: pointer;
+	transition: 0.5s;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 10px 0 10px 0;
+	text-align: center;
+}
+
+.no-1,
+.no-2,
+.no-3 {
+	background-color: #cca300;
+	border: 2px solid #cca300;
+	color: #fff;
+}
+
+.no-1:hover,
+.no-2:hover,
+.no-3:hover {
+	color: #cca300;
+	background-color: white;
+	transition: 0.5s;
+	border-radius: 0px 10px 0px 10px;
+}
+
+.main .main-content .about-us,
+.main .main-content .vision,
+.main .main-content .mission {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+
+	margin-top: 30px;
+	padding: 30px 0 50px 0;
+	flex-wrap: wrap;
+}
+
+.main-content {
+	background: linear-gradient(90deg,
+			rgba(255, 255, 255, 1) 40%,
+			rgb(240, 240, 240));
+}
+
+.content-img {
+	width: 400px;
+	height: 450px;
+	margin: 30px;
+	overflow: hidden !important;
+	border-radius: 10px;
+}
+
+.main .main-content .about-us img,
+.main .main-content .vision img,
+.main .main-content .mission img {
+	width: 400px;
+	height: 450px;
+	object-fit: cover;
+	border-radius: 2px;
+	box-shadow: 6px 6px 6px lightgray;
+	transition: 1s;
+}
+
+.main .main-content .about-us img:hover,
+.main .main-content .vision img:hover,
+.main .main-content .mission img:hover {
+	transform: scale(1.1,1.1);
+	transition: 1s;
+}
+
+.main .main-content .about-us h3,
+.main .main-content .vision h3,
+.main .main-content .mission h3,
+.vision-mission .big-vision-mission .vision-part h3,
+.vision-mission .big-vision-mission .mission-part h3 {
+	font-size: 34px;
+	margin: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.discprition {
+	width: auto;
+	max-width: 550px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.sec-paragraph {
+	width: 90%;
+	text-align: center;
+	line-height: 35px;
+	padding: 10px;
+}
+
+.sec-paragraph {
+	color: #505050;
+}
+
+.main .main-content .remove {
+	display: none;
+	transition: 1s;
+}
+
+.vision-mission {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+	flex-direction: column;
+}
+
+.vision-mission h1 {
+	font-size: 50px;
+	letter-spacing: 5px;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 10px;
+}
+
+.vision-mission .big-vision-mission {
+	width: 95%;
+	height: auto;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 50px 0;
+}
+
+.vision-mission .big-vision-mission .vision-part,
+.vision-mission .big-vision-mission .mission-part {
+	width: 550px;
+	display: flex;
+	height: 650px;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	box-shadow: 1px 1px 10px rgba(170, 147, 147, 0.589);
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.vision-mission img {
+	height: 150px;
+	margin-top: 70px;
+}
+
+@media screen and (max-width: 601px) {
+
+	.background-content h1 {
+		font-size: 60px;
+	}
+
+	.vision-mission .big-vision-mission .vision-part,
+	.vision-mission .big-vision-mission .mission-part {
+		height: auto;
+	}
+}

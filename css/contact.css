@@ -1,0 +1,214 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.page-conent p{
+  color: rgb(70, 70, 70);
+
+}
+
+p,a,label,input,span{
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+ }
+ 
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7)), url(../images/homebg.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    padding: 50px 0 0 0;
+
+}
+.content h2{
+
+    color: #fff;
+}
+.content p{
+    color: #fff;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.box .icon img{
+    width: 35px;
+    height: 35px;
+}
+.box .text{
+    display: flex;
+    margin-left: 20px;
+    color: #fff;
+    flex-direction: column;
+}
+.box .text h3{
+    color: #cca300;
+}
+.contactform{
+    width: 70%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    color: #333;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform input,
+.contactform textarea{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: #cca300;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.inputbox input[type="submit"]{
+    background-color: #e6b800;
+    padding: 13px 25px;
+    width: auto;
+    font-size: 21px;
+    transition: 0.5s;
+    border-radius: 5px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border: 1px solid #e6b800;
+    cursor: pointer;
+    text-decoration: none;
+}
+.inputbox input[type="submit"]:hover{
+    background-color: transparent;
+    transition: 0.5s;
+}
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo{
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .contactinfo , .contactform{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* Success msg */
+.success{
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contt{
+    border-radius: 20px;
+    height: 50%;
+    width: 35%;
+    background-color: #cca300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contt p{
+    color: white;
+    font-size: 22px;
+}
+
+.contt a{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.contt a:hover{
+    color: white;
+    background-color: transparent;
+    transition: 0.5s;
+}

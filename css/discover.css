@@ -1,0 +1,113 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+p,a{
+    font-size: 16px;
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  
+  h1,h2,h3,h4,h5,h6{
+      font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+  
+  body{
+    overflow-x: hidden;
+  }
+
+
+.cat-sec{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../ancient-images/pexels-frans-van-heerden-631339.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cats{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0 70px 0 ;
+}
+
+.cat{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    z-index: 2;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+
+.layer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.503);
+}
+
+.mueseum{
+    width: 430px;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 1367px) {
+    .cats{
+       margin: 100px 0px;
+    }
+}
+
+
+.muimg{
+    height: 280px;
+    width: 430px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 600px) {
+    
+.muimg{
+    height: 250px;
+    width: 100%;
+
+}
+.mueseum{
+    width: 100%;
+    height: 250px;
+   
+}
+
+.cats{
+    width:90%;
+}
+
+.cat{
+    width:100%;
+}
+}

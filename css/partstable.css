@@ -1,0 +1,149 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.page-conent p {
+    color: rgb(70, 70, 70);
+
+}
+
+p,
+a,
+label,
+input {
+    font-size: 16px;
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+.koko{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ .kokos{
+    height: 350px;
+    width: 40%;
+    border-radius: 20px;
+    background: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.koko form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+}
+.kokos p{
+    margin-bottom: 50px;
+}
+.hio,.can{
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline;
+    margin: 10px;
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.btnn{
+    display: flex;
+}
+.hide{
+    display: none;
+    pointer-events: none;
+}
+
+
+table {
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+table tr:nth-child(1) {
+    background: linear-gradient(to left, #0b0b0b, #4b4b4b);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(1) th {
+    padding: 10px 0;
+}
+
+table tr:nth-child(even) {
+    background-color: floralwhite;
+}
+
+table td {
+    border: 1px solid #fff;
+    padding: 10px 5px ;
+}
+
+
+
+.abb{
+    width: 20%;
+}
+
+.bt{
+    width: 7%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: green;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.dell {
+    color: red;
+}
+
+iframe{
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}

@@ -1,0 +1,191 @@
+.museum-data{
+    height: 70vh;
+    width: 100%;
+    background-color: dodgerblue;
+    overflow:hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.museum-bg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.museum-layer{
+    background-color: rgba(0, 0, 0, 0.701);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.museum-text{
+    height: 80%;
+    width: 90%;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-right,
+.text-left{
+    height: 100%;
+    width: auto;
+    max-width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.text-left iframe{
+    width:400px;
+    height:250px;
+    border-radius: 20px;
+}
+
+.text-right h1{
+    color: white;
+    font-size: 35px;
+}
+
+.page{
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.container{
+    height: 100%;
+    width: 90%;
+    padding: 100px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.parts{
+    height: 230px;
+    width: 380px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.153);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bgg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.data{
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0px;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 1.5px;
+    transition: 1s;
+}
+
+.data .name{
+    text-align: center;
+}
+
+.parts:hover .data{
+    opacity: 1;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.data .bttn{
+    text-decoration: none;
+    color: white;
+    background-color: #c19f37;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Cairo', sans-serif;
+}
+
+.parts p{
+    color: white;
+    background-color: transparent;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width:950px) {
+
+    .museum-data{
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .text-right,
+    .text-left{
+        height: auto;
+        max-height: 50vh;
+    max-width: 400px;
+}
+
+.text-right p{
+    margin: 15px 0;
+}
+
+.museum-text{
+    bottom: 0;
+    height: 90%;
+}
+
+.text-left iframe{
+    width:350px;
+    height:220px;
+    border-radius: 20px;
+}
+
+    
+}
